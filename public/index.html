@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopFloorSpicks — Curated Equipment Picks & Professional Reviews</title>
+<meta name="description" content="Hand-picked reviews, buyer guides, and technical specs for commercial-grade equipment across 11 industry verticals. Your shop floor, our picks.">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95PY8PSZ0Y"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-95PY8PSZ0Y');</script>
+<style>
+:root {
+  --cream: #faf8f5; --cream-deep: #f0ebe3; --card: #ffffff;
+  --terracotta: #c0392b; --terracotta-light: #e8d5c4; --terracotta-soft: #f5e6d8;
+  --sage: #5d7a4a; --sage-light: #d4e4c7;
+  --charcoal: #2d2d2d; --charcoal-mid: #4a4a4a;
+  --text: #3d3d3d; --text-mid: #6b6b6b; --text-dim: #999;
+  --border: #e5e0d8; --border-warm: #d4c5b0; --mustard: #d4a574;
+  --radius: 8px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans 3', -apple-system, sans-serif; background: var(--cream); color: var(--text); }
+a { color: inherit; text-decoration: none; }
+
+/* HEADER */
+.site-header { background: var(--charcoal); position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--terracotta); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; max-width: 1100px; margin: 0 auto; }
+.logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.3rem; color: #fff; display: flex; align-items: center; gap: 10px; }
+.logo-mark { width: 30px; height: 30px; border-radius: 50%; background: var(--terracotta); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #fff; font-family: 'Playfair Display', serif; font-weight: 700; }
+.main-nav { display: flex; gap: 2px; flex-wrap: wrap; }
+.main-nav a { color: #bbb; font-weight: 600; padding: 6px 10px; border-radius: 4px; transition: all 0.2s; letter-spacing: 0.02em; text-transform: uppercase; font-size: 0.72rem; }
+.main-nav a:hover { color: #fff; background: rgba(192,57,43,0.3); }
+.nav-more { position: relative; }
+.nav-more .dropdown { display: none; position: absolute; right: 0; top: 100%; background: var(--charcoal); border: 1px solid var(--charcoal-mid); border-radius: 6px; min-width: 180px; padding: 4px 0; box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+.nav-more:hover .dropdown { display: block; }
+.nav-more .dropdown a { display: block; padding: 7px 14px; font-size: 0.75rem; }
+.mobile-toggle { display: none; background: none; border: none; color: #fff; font-size: 1.3rem; cursor: pointer; }
+
+/* HERO */
+.hero-banner { background: linear-gradient(135deg, var(--charcoal) 0%, #3a3a3a 50%, var(--charcoal-mid) 100%); padding: 60px 20px; position: relative; overflow: hidden; }
+.hero-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(192,57,43,0.15) 0%, transparent 70%); border-radius: 50%; }
+.hero-banner::after { content: ''; position: absolute; bottom: -30%; left: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(93,122,74,0.1) 0%, transparent 70%); border-radius: 50%; }
+.hero-inner { max-width: 1100px; margin: 0 auto; position: relative; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 6px; background: rgba(192,57,43,0.2); border: 1px solid rgba(192,57,43,0.3); padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; color: var(--terracotta-light); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+.hero-text h1 { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 14px; }
+.hero-text h1 em { font-style: italic; color: var(--terracotta-light); }
+.hero-text p { color: #aaa; font-size: 1rem; line-height: 1.7; max-width: 480px; }
+.hero-badges { display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
+.hero-badge { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); padding: 8px 14px; border-radius: 6px; }
+.hero-badge .num { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--terracotta-light); }
+.hero-badge .label { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
+.hero-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.hero-tile { border-radius: 8px; padding: 16px; text-align: center; transition: transform 0.3s; }
+.hero-tile:hover { transform: scale(1.04); }
+.hero-tile i { font-size: 1.4rem; margin-bottom: 6px; display: block; }
+.hero-tile span { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.hero-tile:nth-child(1) { background: rgba(192,57,43,0.15); color: #e8a090; }
+.hero-tile:nth-child(2) { background: rgba(93,122,74,0.15); color: #a4c490; }
+.hero-tile:nth-child(3) { background: rgba(212,165,116,0.15); color: #d4a574; }
+.hero-tile:nth-child(4) { background: rgba(142,68,173,0.15); color: #c49ddb; }
+
+/* CATEGORIES */
+.cat-section { max-width: 1100px; margin: 0 auto; padding: 40px 20px 16px; }
+.cat-section-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--charcoal); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.cat-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.cat-pills { display: flex; gap: 10px; flex-wrap: wrap; }
+.cat-pill { display: flex; align-items: center; gap: 6px; padding: 8px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 0.78rem; font-weight: 600; color: var(--text); transition: all 0.2s; }
+.cat-pill:hover { border-color: var(--c); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transform: translateY(-1px); }
+.cat-pill i { color: var(--c); font-size: 0.85rem; }
+
+/* COMING SOON */
+.coming-soon { max-width: 1100px; margin: 0 auto; padding: 48px 20px 60px; text-align: center; }
+.coming-soon-icon { font-size: 3rem; color: var(--terracotta); opacity: 0.4; margin-bottom: 16px; }
+.coming-soon h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--charcoal); margin-bottom: 8px; }
+.coming-soon p { color: var(--text-mid); font-size: 0.95rem; line-height: 1.7; max-width: 520px; margin: 0 auto; }
+
+/* FOOTER */
+.site-footer { background: var(--charcoal); color: #aaa; padding: 40px 20px 20px; border-top: 3px solid var(--terracotta); }
+.footer-inner { max-width: 1100px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 28px; margin-bottom: 28px; }
+.footer-brand h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.05rem; margin-bottom: 6px; }
+.footer-brand p { font-size: 0.8rem; line-height: 1.6; }
+.footer-col h4 { color: #ddd; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; font-weight: 700; }
+.footer-col a { display: block; font-size: 0.8rem; padding: 2px 0; transition: color 0.2s; }
+.footer-col a:hover { color: var(--terracotta-light); }
+.footer-bottom { border-top: 1px solid var(--charcoal-mid); padding-top: 16px; font-size: 0.72rem; text-align: center; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .hero-text p { margin: 0 auto; }
+  .hero-badges { justify-content: center; }
+  .hero-visual { max-width: 260px; margin: 0 auto; }
+  .hero-text h1 { font-size: 1.8rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .main-nav { display: none; }
+  .main-nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--charcoal); padding: 10px 20px; z-index: 99; }
+  .mobile-toggle { display: block; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-banner { padding: 36px 20px; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+  <a href="/" class="logo"><span class="logo-mark">S</span> ShopFloorSpicks</a>
+  <nav class="main-nav">
+    <a href="/industrial">Equipment</a>
+    <a href="/electronics">Electronics</a>
+    <a href="/materials">Materials</a>
+    <a href="/automotive">Automotive</a>
+    <a href="/home">Home</a>
+    <a href="/fashion">Apparel</a>
+    <a href="/health">Medical</a>
+    <div class="nav-more">
+      <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+      <div class="dropdown">
+        <a href="/food">Food & Beverage</a>
+        <a href="/sports">Sports</a>
+        <a href="/pets">Pet & Vet</a>
+        <a href="/more">More</a>
+        <a href="/author/team">Our Team</a>
+      </div>
+    </div>
+  </nav>
+  <button class="mobile-toggle" aria-label="Menu">&#9776;</button>
+</div>
+</header>
+
+<section class="hero-banner">
+<div class="hero-inner">
+  <div class="hero-text">
+    <div class="hero-eyebrow"><i class="fas fa-clipboard-check"></i> Curated for Professionals</div>
+    <h1>Your Shop Floor, <em>Our Picks</em></h1>
+    <p>Hand-selected reviews, buyer guides, and technical specifications for commercial-grade equipment. We do the research so you can focus on the work.</p>
+    <div class="hero-badges">
+      <div class="hero-badge"><span class="num">11</span><span class="label">Categories</span></div>
+      <div class="hero-badge"><span class="num">Pro</span><span class="label">Reviews</span></div>
+      <div class="hero-badge"><span class="num">Free</span><span class="label">Guides</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-tile"><i class="fas fa-cogs"></i><span>Equipment</span></div>
+    <div class="hero-tile"><i class="fas fa-leaf"></i><span>Materials</span></div>
+    <div class="hero-tile"><i class="fas fa-tools"></i><span>Tools</span></div>
+    <div class="hero-tile"><i class="fas fa-bolt"></i><span>Electronics</span></div>
+  </div>
+</div>
+</section>
+
+<div class="cat-section">
+  <div class="cat-section-title">Browse Categories</div>
+  <div class="cat-pills">
+    <a href="/industrial" class="cat-pill" style="--c:#c0392b"><i class="fas fa-industry"></i><span>Heavy Equipment</span></a>
+    <a href="/electronics" class="cat-pill" style="--c:#2980b9"><i class="fas fa-microchip"></i><span>Electronics</span></a>
+    <a href="/materials" class="cat-pill" style="--c:#d4a574"><i class="fas fa-flask"></i><span>Raw Materials</span></a>
+    <a href="/automotive" class="cat-pill" style="--c:#8e44ad"><i class="fas fa-car"></i><span>Auto Parts</span></a>
+    <a href="/home" class="cat-pill" style="--c:#5d7a4a"><i class="fas fa-home"></i><span>Home & Garden</span></a>
+    <a href="/fashion" class="cat-pill" style="--c:#c2185b"><i class="fas fa-tshirt"></i><span>Apparel & Textile</span></a>
+    <a href="/health" class="cat-pill" style="--c:#00897b"><i class="fas fa-heartbeat"></i><span>Medical Gear</span></a>
+    <a href="/food" class="cat-pill" style="--c:#e65100"><i class="fas fa-utensils"></i><span>Food & Beverage</span></a>
+    <a href="/sports" class="cat-pill" style="--c:#558b2f"><i class="fas fa-futbol"></i><span>Sports & Outdoors</span></a>
+    <a href="/pets" class="cat-pill" style="--c:#ef6c00"><i class="fas fa-paw"></i><span>Pet & Vet</span></a>
+    <a href="/more" class="cat-pill" style="--c:#546e7a"><i class="fas fa-ellipsis-h"></i><span>More</span></a>
+  </div>
+</div>
+
+<div class="coming-soon">
+  <div class="coming-soon-icon"><i class="fas fa-hard-hat"></i></div>
+  <h2>Content Coming Soon</h2>
+  <p>We're curating expert reviews and buyer guides across 11 industry verticals. Check back soon for hand-picked equipment recommendations from real professionals.</p>
+</div>
+
+<footer class="site-footer">
+<div class="footer-inner">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>ShopFloorSpicks</h3>
+      <p>Curated picks and expert reviews for commercial equipment, tools, and industrial supplies across 11 categories.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Equipment</h4>
+      <a href="/industrial">Heavy Equipment</a>
+      <a href="/electronics">Electronics</a>
+      <a href="/materials">Raw Materials</a>
+      <a href="/automotive">Auto Parts</a>
+    </div>
+    <div class="footer-col">
+      <h4>Industries</h4>
+      <a href="/home">Home & Garden</a>
+      <a href="/fashion">Apparel & Textile</a>
+      <a href="/health">Medical Gear</a>
+      <a href="/food">Food & Beverage</a>
+    </div>
+    <div class="footer-col">
+      <h4>More</h4>
+      <a href="/sports">Sports & Outdoors</a>
+      <a href="/pets">Pet & Vet</a>
+      <a href="/more">General</a>
+      <a href="/author/team">Our Team</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 ShopFloorSpicks.com — All rights reserved.</div>
+</div>
+</footer>
+<script>
+document.querySelector('.mobile-toggle')?.addEventListener('click',function(){document.querySelector('.main-nav')?.classList.toggle('open');});
+</script>
+</body>
+</html>

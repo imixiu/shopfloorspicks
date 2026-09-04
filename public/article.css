@@ -1,0 +1,211 @@
+/* ShopFloorSpicks — Article Content Styles */
+
+.article-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 0 40px;
+}
+
+.article-wrap .article-content {
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #1e293b;
+}
+
+.article-wrap .article-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.article-wrap .article-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  color: #1a1a2e;
+  border-left: 4px solid #c0392b;
+  padding-left: 16px;
+  line-height: 1.3;
+}
+
+.article-wrap .article-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #21262d;
+}
+
+.article-wrap .article-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #1e293b;
+}
+
+.article-wrap .article-content p {
+  margin-bottom: 1.4rem;
+  color: #1e293b;
+}
+
+.article-wrap .article-content p:first-of-type {
+  font-size: 1.1rem;
+  color: #334155;
+  font-weight: 400;
+}
+
+.article-wrap .article-content a {
+  color: #c0392b;
+  text-decoration: underline;
+  text-decoration-color: rgba(192,57,43,0.3);
+  text-underline-offset: 3px;
+}
+
+.article-wrap .article-content a:hover {
+  color: #5d7a4a;
+  text-decoration-color: #5d7a4a;
+}
+
+.article-wrap .article-content ul,
+.article-wrap .article-content ol {
+  margin: 16px 0 20px 28px;
+}
+
+.article-wrap .article-content li {
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.article-wrap .article-content ul li::marker {
+  color: #c0392b;
+}
+
+.article-wrap .article-content ol li::marker {
+  color: #5d7a4a;
+  font-weight: 600;
+}
+
+.article-wrap .article-content blockquote {
+  border-left: 4px solid #d4a574;
+  background: #f8f9fa;
+  padding: 16px 20px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #475569;
+}
+
+.article-wrap .article-content blockquote p {
+  margin-bottom: 0;
+  color: #475569;
+}
+
+.article-wrap .article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.article-wrap .article-content thead th {
+  background: #2d2d2d;
+  color: #fff;
+  padding: 12px 16px;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.article-wrap .article-content tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: #1e293b;
+}
+
+.article-wrap .article-content tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.article-wrap .article-content tbody tr:hover {
+  background: rgba(192,57,43,0.04);
+}
+
+.article-wrap .article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.article-wrap .article-content code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #2d2d2d;
+}
+
+.article-wrap .article-content pre {
+  background: #2d2d2d;
+  color: #c9d1d9;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 20px 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.article-cover {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.article-meta a {
+  color: #c0392b;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.article-meta a:hover {
+  text-decoration: underline;
+  color: #5d7a4a;
+}
+
+.article-meta time {
+  color: #94a3b8;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 768px) {
+  .article-wrap { padding: 16px 0 32px; }
+  .article-wrap .article-content { font-size: 1rem; }
+  .article-wrap .article-content h1 { font-size: 1.6rem; }
+  .article-wrap .article-content h2 { font-size: 1.3rem; }
+  .article-meta { flex-wrap: wrap; }
+}

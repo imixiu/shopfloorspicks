@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "shopfloorspicks",
+  "account_id": "25e5887649f21af7f2869497017cb46f",
+  "compatibility_date": "2025-06-15",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "usage_model": "bundled",
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "shopfloorspicks"
+    }
+  ],
+  "workers_dev": true,
+  "routes": [
+    {"pattern": "shopfloorspicks.com/*", "zone_name": "shopfloorspicks.com"},
+    {"pattern": "www.shopfloorspicks.com/*", "zone_name": "shopfloorspicks.com"}
+  ]
+}
