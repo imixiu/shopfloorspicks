@@ -127,6 +127,11 @@ function buildHomepage(articles: any[], countMap: Record<string, number>, author
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShopFloorSpicks — Curated Equipment Picks & Professional Reviews</title>
 <meta name="description" content="Hand-picked reviews, buyer guides, and technical specs for commercial-grade equipment across 11 industry verticals. Your shop floor, our picks.">
+<meta property="og:title" content="ShopFloorSpicks — Curated Equipment Picks & Professional Reviews">
+<meta property="og:description" content="Hand-picked reviews, buyer guides, and technical specs for commercial-grade equipment across 11 industry verticals. Your shop floor, our picks.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shopfloorspicks.com/">
+<link rel="canonical" href="https://shopfloorspicks.com/">
 <link rel="icon" href="/icon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

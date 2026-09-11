@@ -112,6 +112,9 @@ export const HEADER_HTML = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{TITLE}}</title>
 <meta name="description" content="{{DESCRIPTION}}">
+<meta property="og:title" content="{{TITLE}} | ShopFloorsPicks">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:type" content="website">
 <link rel="canonical" href="{{CANONICAL}}">
 <link rel="icon" href="/icon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
